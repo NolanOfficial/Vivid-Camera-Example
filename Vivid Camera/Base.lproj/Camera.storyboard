@@ -112,7 +112,7 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+            <point key="canvasLocation" x="58" y="132"/>
         </scene>
         <!--Preview View Controller-->
         <scene sceneID="Qe2-jy-b65">
