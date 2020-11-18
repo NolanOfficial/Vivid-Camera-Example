@@ -2,15 +2,13 @@
 //  AppDelegate.swift
 //  Vivid Camera
 //
-//  Created by Marxent on 11/14/20.
+//  Created by Nolan Fuchs on 11/14/20.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

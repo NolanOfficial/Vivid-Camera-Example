@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Vivid Camera
 //
-//  Created by Marxent on 11/14/20.
+//  Created by Nolan Fuchs on 11/14/20.
 //
 
 import UIKit
