@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D50A9E425624F6A003E9AD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50A9E325624F6A003E9AD6 /* Extensions.swift */; };
+		5D6F8D9325666A45006BB923 /* VividMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F8D9225666A45006BB923 /* VividMerge.swift */; };
 		5D7619A52565395F00DFE86E /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7619A42565395F00DFE86E /* PreviewViewController.swift */; };
 		5D7A170B2560D86200DF1989 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A170A2560D86200DF1989 /* AuthenticationManager.swift */; };
 		5D7A17182560EAF400DF1989 /* VividCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A17172560EAF400DF1989 /* VividCameraController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		5D50A9E325624F6A003E9AD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5D6F8D9225666A45006BB923 /* VividMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VividMerge.swift; sourceTree = "<group>"; };
 		5D7619A42565395F00DFE86E /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		5D7A170A2560D86200DF1989 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		5D7A17172560EAF400DF1989 /* VividCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VividCameraController.swift; sourceTree = "<group>"; };
@@ -119,9 +121,10 @@
 				5DD30A72255FCC7200B98CA4 /* Camera.storyboard */,
 				5DD30A77255FCC7200B98CA4 /* LaunchScreen.storyboard */,
 				5DD30AA5255FD2C100B98CA4 /* CameraButton.swift */,
-				5D7A170A2560D86200DF1989 /* AuthenticationManager.swift */,
 				5D92A68125653BE500CABE92 /* PlayerViewClass.swift */,
+				5D7A170A2560D86200DF1989 /* AuthenticationManager.swift */,
 				5D7A17172560EAF400DF1989 /* VividCameraController.swift */,
+				5D6F8D9225666A45006BB923 /* VividMerge.swift */,
 				5D50A9E325624F6A003E9AD6 /* Extensions.swift */,
 				5DD30A7A255FCC7200B98CA4 /* Info.plist */,
 			);
@@ -279,6 +282,7 @@
 				5DD30A71255FCC7200B98CA4 /* CameraViewController.swift in Sources */,
 				5DD30A6D255FCC7200B98CA4 /* AppDelegate.swift in Sources */,
 				5DD30AA6255FD2C100B98CA4 /* CameraButton.swift in Sources */,
+				5D6F8D9325666A45006BB923 /* VividMerge.swift in Sources */,
 				5D92A68225653BE500CABE92 /* PlayerViewClass.swift in Sources */,
 				5D7A170B2560D86200DF1989 /* AuthenticationManager.swift in Sources */,
 				5D7A17182560EAF400DF1989 /* VividCameraController.swift in Sources */,

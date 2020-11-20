@@ -11,36 +11,45 @@ import PhotosUI
 
 class PreviewViewController: UIViewController {
     
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var downloadButton: UIButton!
+    
     public var newSampleURL: URL?
     public var playerView: PlayerViewClass? = PlayerViewClass()
+    let vividMerge = VividMerge()
     var notificationObserver: NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        playerView?.frame = view.frame
-        if let playerView = playerView {
-            view.insertSubview(playerView, at: 0)
-        } else {
-            print("Preview Layer Error")
+        backButton.isHidden = true
+        downloadButton.isHidden = true
+        if let newSampleUrl = newSampleURL {
+            vividMerge.reverseVideoClip(videoURL: newSampleUrl) { (result) in
+                self.activityIndicator.isHidden = true
+                self.backButton.isHidden = false
+                self.downloadButton.isHidden = false
+                switch result {
+                case .success(let finalUrl):
+                    DispatchQueue.main.async {
+                        self.playerView?.frame = self.view.frame
+                        if let playerView = self.playerView {
+                            self.view.insertSubview(playerView, at: 0)
+                        } else {
+                            print("Preview Layer Error")
+                        }
+                        self.playVideo(url: finalUrl)
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
         }
-
-        playVideo(url: newSampleURL!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self.notificationObserver as Any)
-        if FileManager.default.fileExists(atPath: newSampleURL!.path) {
-            do {
-                // Delete an old duplicate file
-                try FileManager.default.removeItem(at: newSampleURL!)
-                print("URL removed")
-            } catch {
-                print("Unable to remove URL")
-            }
-        } else {
-            print("URL has already been removed")
-        }
+        vividMerge.clearUrls()
         playerView = nil
     }
     

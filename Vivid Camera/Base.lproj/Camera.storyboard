@@ -146,21 +146,32 @@
                                     <action selector="dismiss:" destination="hbT-ZZ-B7v" eventType="touchUpInside" id="Ii2-UR-rCQ"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UKW-Gy-Nhu">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ls9-sJ-rpF"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="sAa-v5-LVk" firstAttribute="top" secondItem="Ls9-sJ-rpF" secondAttribute="top" constant="35" id="4Ni-88-s8w"/>
                             <constraint firstItem="Ls9-sJ-rpF" firstAttribute="bottom" secondItem="hZS-ow-uEL" secondAttribute="bottom" constant="35" id="ASS-eT-nkL"/>
+                            <constraint firstItem="UKW-Gy-Nhu" firstAttribute="centerY" secondItem="gHS-f0-iw7" secondAttribute="centerY" id="HYE-Ep-PJm"/>
+                            <constraint firstItem="UKW-Gy-Nhu" firstAttribute="centerX" secondItem="gHS-f0-iw7" secondAttribute="centerX" id="YHu-yC-tNz"/>
                             <constraint firstItem="sAa-v5-LVk" firstAttribute="leading" secondItem="Ls9-sJ-rpF" secondAttribute="leading" constant="20" id="YiB-lz-q6d"/>
                             <constraint firstItem="Ls9-sJ-rpF" firstAttribute="trailing" secondItem="hZS-ow-uEL" secondAttribute="trailing" constant="35" id="bcZ-7z-h3w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="B90-v9-37I"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="UKW-Gy-Nhu" id="MQU-YL-vEP"/>
+                        <outlet property="backButton" destination="sAa-v5-LVk" id="H75-kY-wVV"/>
+                        <outlet property="downloadButton" destination="hZS-ow-uEL" id="ahp-dW-33R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXY-1m-cXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="132"/>
+            <point key="canvasLocation" x="953.62318840579712" y="131.91964285714286"/>
         </scene>
     </scenes>
     <designables>
